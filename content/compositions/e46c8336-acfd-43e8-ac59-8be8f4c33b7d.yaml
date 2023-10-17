@@ -373,6 +373,20 @@ composition:
           title:
             type: text
             value: Atoms
+      - _id: b08be46a-560c-4362-8db8-13a7630d1e13
+        type: navigationLink
+        variant: ''
+        parameters:
+          link:
+            type: link
+            value:
+              path: /examples
+              type: projectMapNode
+              nodeId: b8994dfb-6a7e-4a10-a1af-e8dcf520a758
+              projectMapId: 40535f31-cdc1-4ac3-bb4d-2a008493b431
+          title:
+            type: text
+            value: Examples
     iconLinks:
       - _id: c34a481b-1d36-457d-bc91-a3cf3df2a8c0
         type: iconLink
@@ -401,8 +415,8 @@ composition:
   _overridability:
     parameters:
       syntheticGap: 'yes'
-created: '2023-08-28T12:30:23.574658+00:00'
-modified: '2023-09-19T10:05:32.724101+00:00'
+created: '2023-09-20T09:32:34.688792+00:00'
+modified: '2023-09-22T09:38:30.212801+00:00'
 pattern: true
 previewImageUrl: >-
   https://res.cloudinary.com/uniform-demos/image/upload/v1/csk-preview-images/UniformTheme/Header_pattern_preview_image

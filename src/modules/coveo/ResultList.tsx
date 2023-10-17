@@ -1,8 +1,6 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { FC, useContext, useEffect, useMemo, useState } from 'react';
 import { ComponentInstance, RootComponentInstance } from '@uniformdev/canvas';
 import { ComponentProps, registerUniformComponent } from '@uniformdev/canvas-react';
-// @ts-ignore: Expected error if the module is not yet installed
 import { buildResultList, Result } from '@coveo/headless';
 import { HeadlessEngineContext } from './Engine';
 import ResultItem from './ResultItem';
@@ -61,10 +59,7 @@ const ResultList: FC<ComponentProps> = ({ component }) => {
 
   return (
     <div className="grid gap-y-3 mb-8 sm:grid-cols-2 lg:grid-cols-3 sm:gap-x-8 sm:gap-y-6 lg:gap-x-8 lg:gap-y-5 sm:mb-0">
-      {
-        // @ts-ignore: Expected error if the module is not yet installed
-        resultState.results.map(result => renderResultItem(component, result))
-      }
+      {resultState.results.map(result => renderResultItem(component, result))}
     </div>
   );
 };

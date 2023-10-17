@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { FC, useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import { ComponentProps, registerUniformComponent, UniformText } from '@uniformdev/canvas-react';
 import {
@@ -10,7 +9,6 @@ import {
   SortOrder,
   buildCriterionExpression,
   buildFieldSortCriterion,
-  // @ts-ignore: Expected error if the module is not yet installed
 } from '@coveo/headless';
 import { HeadlessEngineContext } from './Engine';
 import Dropdown from '../../components/Dropdown';

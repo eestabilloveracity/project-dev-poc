@@ -41,6 +41,7 @@
   "dependencies": {
     "@contentful/rich-text-html-renderer": "^16.1.0",
     "@contentful/rich-text-types": "^16.2.0",
+    "@coveo/headless": "^2.31.0",
     "@uniformdev/canvas": "19.63.2",
     "@uniformdev/canvas-next": "19.63.2",
     "@uniformdev/canvas-react": "19.63.2",

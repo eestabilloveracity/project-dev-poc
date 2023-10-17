@@ -1,7 +1,5 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { FC, useContext, useEffect, useMemo, useState } from 'react';
 import { ComponentProps, registerUniformComponent } from '@uniformdev/canvas-react';
-// @ts-ignore: Expected error if the module is not yet installed
 import { buildPager, PagerState, buildResultsPerPage, ResultsPerPageState, buildSearchBox } from '@coveo/headless';
 import { HeadlessEngineContext } from './Engine';
 import Button from '../../components/Button';
@@ -47,18 +45,15 @@ const Pager: FC<PagerProps> = ({ numberOfResults = '10', numberOfPages = '3' }) 
         copy="«"
         style="ghost"
       />
-      {
-        // @ts-ignore: Expected error if the module is not yet installed
-        pagerState.currentPages.map(page => (
-          <Button
-            key={page}
-            disable={headlessPager.isCurrentPage(page)}
-            onClick={() => headlessPager.selectPage(page)}
-            copy={page}
-            style="primary"
-          />
-        ))
-      }
+      {pagerState.currentPages.map(page => (
+        <Button
+          key={page}
+          disable={headlessPager.isCurrentPage(page)}
+          onClick={() => headlessPager.selectPage(page)}
+          copy={page}
+          style="primary"
+        />
+      ))}
       <Button disable={!pagerState.hasNextPage} onClick={() => headlessPager.nextPage()} copy="»" style="ghost" />
     </div>
   );

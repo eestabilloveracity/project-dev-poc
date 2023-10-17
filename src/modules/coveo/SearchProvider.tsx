@@ -1,8 +1,6 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { FC, useEffect, useMemo, useState } from 'react';
 import classNames from 'classnames';
 import { ComponentProps, UniformSlot, registerUniformComponent } from '@uniformdev/canvas-react';
-// @ts-ignore: Expected error if the module is not yet installed
 import { buildFacet, buildSearchBox, FacetState } from '@coveo/headless';
 import { getHeadlessEngine, HeadlessEngineContext } from './Engine';
 import Container from '../../components/Container';
@@ -38,7 +36,6 @@ const SearchProvider: FC<SearchProviderProps> = ({ component, ...facet }) => {
   useEffect(() => headlessFacets?.subscribe(() => setFacetState(headlessFacets.state)), [headlessFacets]);
 
   const currentSubCategory = useMemo(
-    // @ts-ignore: Expected error if the module is not yet installed
     () => facetState?.values.find(v => v.value === rootFacetValue),
     [facetState?.values, rootFacetValue]
   );

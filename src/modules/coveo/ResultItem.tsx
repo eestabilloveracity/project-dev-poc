@@ -1,7 +1,5 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { FC } from 'react';
 import { ComponentProps } from '@uniformdev/canvas-react';
-// @ts-ignore: Expected error if the module is not yet installed
 import { Result } from '@coveo/headless';
 import Card from '../../canvas/Card';
 

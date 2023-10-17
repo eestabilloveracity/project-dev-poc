@@ -1,8 +1,6 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { FC, useContext, useEffect, useMemo, useState } from 'react';
 import classNames from 'classnames';
 import { ComponentProps, UniformText, registerUniformComponent } from '@uniformdev/canvas-react';
-// @ts-ignore: Expected error if the module is not yet installed
 import { FacetState, buildFacet, FacetValue, buildSearchBox } from '@coveo/headless';
 import { HeadlessEngineContext } from './Engine';
 
@@ -30,7 +28,6 @@ const Facet: FC<FacetProps> = ({ field }) => {
   const headlessSearchBox = useMemo(() => buildSearchBox(headlessEngine), [headlessEngine]);
 
   const currentSubCategory = useMemo(
-    // @ts-ignore: Expected error if the module is not yet installed
     () => facetState?.values.find(v => v.value === field),
     [facetState?.values, field]
   );

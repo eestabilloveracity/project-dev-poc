@@ -1,7 +1,5 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { FC, useCallback, useEffect, useMemo, useState, ChangeEvent, useContext } from 'react';
 import { registerUniformComponent, ComponentProps } from '@uniformdev/canvas-react';
-// @ts-ignore: Expected error if the module is not yet installed
 import { buildSearchBox } from '@coveo/headless';
 import { HeadlessEngineContext } from './Engine';
 

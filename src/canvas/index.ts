@@ -1,3 +1,4 @@
+import '../modules/coveo';
 import './Accordion';
 import './AccordionItem';
 import './AddToCart';

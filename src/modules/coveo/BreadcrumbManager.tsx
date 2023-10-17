@@ -1,7 +1,5 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { FC, useContext, useEffect, useMemo, useState } from 'react';
 import { ComponentProps, registerUniformComponent } from '@uniformdev/canvas-react';
-// @ts-ignore: Expected error if the module is not yet installed
 import { buildBreadcrumbManager, BreadcrumbManagerState } from '@coveo/headless';
 import { HeadlessEngineContext } from './Engine';
 import Button from '../../components/Button';
@@ -31,27 +29,21 @@ const BreadcrumbManager: FC<BreadcrumbManagerProps> = ({ title }) => {
     <div>
       <p className="text-l font-bold">{title}</p>
       <ul>
-        {
-          // @ts-ignore: Expected error if the module is not yet installed
-          breadcrumbManagerState.facetBreadcrumbs.map(facet => (
-            <li key={facet.facetId} className="mb-4">
-              {facet.field}:
-              <div className="flex gap-2 flex-wrap">
-                {
-                  // @ts-ignore: Expected error if the module is not yet installed
-                  facet.values.map(breadcrumb => (
-                    <Button
-                      key={breadcrumb.value.value}
-                      style="primary"
-                      onClick={() => breadcrumb.deselect()}
-                      copy={breadcrumb.value.value}
-                    />
-                  ))
-                }
-              </div>
-            </li>
-          ))
-        }
+        {breadcrumbManagerState.facetBreadcrumbs.map(facet => (
+          <li key={facet.facetId} className="mb-4">
+            {facet.field}:
+            <div className="flex gap-2 flex-wrap">
+              {facet.values.map(breadcrumb => (
+                <Button
+                  key={breadcrumb.value.value}
+                  style="primary"
+                  onClick={() => breadcrumb.deselect()}
+                  copy={breadcrumb.value.value}
+                />
+              ))}
+            </div>
+          </li>
+        ))}
       </ul>
     </div>
   );

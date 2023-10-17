@@ -159,10 +159,18 @@ slots:
       - review
       - modal
       - testimonial
+      - coveo-Facet
+      - coveo-resultList
+      - coveo-Pager
+      - coveo-pager
+      - coveo-facet
+      - coveo-querySummary
+      - coveo-breadcrumbManager
+      - coveo-sort
     allowAllComponents: false
     inheritAllowedComponents: false
     patternsInAllowedComponents: false
 titleParameter: title
 canBeComposition: false
-created: '2023-08-28T12:30:17.828063+00:00'
-updated: '2023-09-12T06:54:30.78017+00:00'
+created: '2023-09-20T09:32:28.549167+00:00'
+updated: '2023-09-22T09:38:18.06705+00:00'

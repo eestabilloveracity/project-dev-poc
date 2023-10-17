@@ -110,10 +110,11 @@ slots:
       - price
       - addToCart
       - review
+      - coveo-breadcrumbManager
     allowAllComponents: false
     inheritAllowedComponents: false
     patternsInAllowedComponents: false
 titleParameter: title
 canBeComposition: false
-created: '2023-08-28T12:30:17.829058+00:00'
-updated: '2023-09-12T06:54:30.809426+00:00'
+created: '2023-09-20T09:32:28.634755+00:00'
+updated: '2023-09-22T09:38:17.496281+00:00'

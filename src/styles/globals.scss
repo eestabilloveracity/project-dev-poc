@@ -22,12 +22,12 @@
   max-width: unset;
 }
 
-.hero-grid-item--center-content {
+.center-content {
   height: 100%;
   display: grid;
   place-items: center;
 }
 
-div:has(.hero-grid-item--center-content) {
+div:has(.center-content) {
   height: 100%;
 }

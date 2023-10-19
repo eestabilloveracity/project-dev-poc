@@ -37,7 +37,7 @@ const PageContent: FC<Pick<BasePageProps, 'preview' | 'useUniformComposition' | 
             'flex flex-col flex-1',
             CHILDREN_CONTAINER_STYLES,
             COMMON_PADDING,
-            getGapClass(gap),
+            // getGapClass(gap),
             getMarginBottomClass(gap),
             styles?.pageContentContainer
           )}

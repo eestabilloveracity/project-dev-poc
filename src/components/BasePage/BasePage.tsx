@@ -9,7 +9,7 @@ import {
 import ComponentStarterKitContextProvider from '../../context/ComponentStarterKitContext';
 import UniformPreviewIcon from '../UniformPreviewIcon';
 import ThemeProvider from '../ThemeProvider';
-import { getGapClass, getMarginBottomClass, PaddingSize } from '../../utilities/styling';
+import { getMarginBottomClass, PaddingSize } from '../../utilities/styling';
 import { CHILDREN_CONTAINER_STYLES, COMMON_PADDING } from '../../hocs/withoutContainer';
 import { BasePageProps } from './';
 

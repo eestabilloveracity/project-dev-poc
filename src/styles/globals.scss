@@ -5,3 +5,29 @@
 .footer-content a {
   text-decoration: underline;
 }
+
+.rgp-red {
+  background-color: #c8102e;
+}
+
+.rgp-red-300 {
+  background-color: #bb0b28;
+}
+
+.rgp-dark {
+  background-color: #00162b;
+}
+
+.full-bleed {
+  max-width: unset;
+}
+
+.hero-grid-item--center-content {
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+div:has(.hero-grid-item--center-content) {
+  height: 100%;
+}
